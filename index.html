@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kevin Lenin Chavez Santiago</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			var materias = {"clases":[
+					{"codigo":"TWII","nombre":"Tecnologias Web II","semestre":7,"horas":5},
+					{"codigo":"SOII","nombre":"Sistemas Operativos II","semestre":7,"horas":5},
+					{"codigo":"PTI","nombre":"Proyectos de tecnología de la información","semestre":7,"horas":5},
+					{"codigo":"E","nombre":"Estadística","semestre":7,"horas":5},
+					{"codigo":"BDD","nombre":"Bases de datos distribuidas","semestre":7,"horas":5}
+			]};
+			function mostrarMaterias() {
+			arregloMostrar="";
+			for (var i = 0; i < 3; i++) {
+				arregloMostrar += materias["clases"][i]["codigo"];
+				arregloMostrar += " ";
+				arregloMostrar += materias["clases"][i]["nombre"];
+				arregloMostrar += " ";
+				arregloMostrar += materias["clases"][i]["semestre"];
+				arregloMostrar += " ";
+				arregloMostrar += materias["clases"][i]["horas"];
+				arregloMostrar += "\n";
+			}
+			alert(arregloMostrar);
+		}
+		</script>
+	</head>
+	<body>
+		<button onclick="mostraMaterias();">Mostrar Alert de materias</button>
+	</body>
+</html>
